@@ -17,12 +17,15 @@ function degree(mtrx,v){
   return sum;
 }
 
-function degreecentrality(){
-  let neighbor = mtrx(,);
+function degreecentrality(mtrx,v){
+  let neighbor = mtrx.size().pop(0) - 1;
+  return degree(mtrx,v)/neighbor;
 }
 
 //Challenge
-
+function king(mtrx,v){
+  
+}
 //Run test code with ctrl+shift+p  then type in "script"
 console.log(degree(A,3));
 console.log(degreecentrality(A,2));
